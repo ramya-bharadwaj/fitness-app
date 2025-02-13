@@ -12,10 +12,13 @@ const profileSchema = new mongoose.Schema(
       required: true,
       default: 'Your Wellness Center',
     },
-    // Add more customizable fields as needed (e.g., tagline, about, logo, etc.)
     tagline: {
       type: String,
       default: 'Helping You Achieve Your Fitness Goals!',
+    },
+    info: {
+      type: String,
+      default: '', // This will store the rich text content (HTML)
     },
   },
   { timestamps: true }
